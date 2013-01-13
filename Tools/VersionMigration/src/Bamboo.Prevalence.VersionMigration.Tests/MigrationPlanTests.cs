@@ -32,6 +32,7 @@
 
 using System;
 using System.Globalization;
+using Bamboo.Prevalence.Implementation;
 using NUnit.Framework;
 using Bamboo.Prevalence.VersionMigration;
 

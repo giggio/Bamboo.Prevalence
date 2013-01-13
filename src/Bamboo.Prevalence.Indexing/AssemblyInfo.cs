@@ -48,5 +48,5 @@ using System.Runtime.CompilerServices;
 [assembly: AssemblyCulture("")]		
 [assembly: AssemblyVersion("1.4.4.4")]
 [assembly: AssemblyDelaySign(false)]
-[assembly: AssemblyKeyFile("../src/Bamboo.Prevalence.snk")]
+[assembly: AssemblyKeyFile("../Bamboo.Prevalence.snk")]
 

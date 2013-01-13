@@ -35,6 +35,7 @@ using System.Collections;
 using System.Collections.Specialized;
 using System.Xml;
 using System.Xml.XPath;
+using Bamboo.Prevalence.Implementation;
 using NUnit.Framework;
 using Bamboo.Prevalence.XPath;
 

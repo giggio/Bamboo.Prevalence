@@ -65,5 +65,67 @@ namespace Bamboo.Prevalence.Implementation
 				throw new ArgumentException(description, paramName);
 			}
 		}
+
+        public static void AssertNotNull(string a, object obj)
+        {
+            if (obj == null)
+            {
+                throw new ArgumentNullException("obj");
+            }
+        }
+        public static void AssertNotNull(object obj)
+        {
+            AssertNotNull(string.Empty, obj);
+        }
+
+        public static void AssertSame(object objA, object objB)
+        {
+            
+            if (objA == null && objB == null) return;
+            if (!ReferenceEquals(objA, objB))
+            {
+                throw new ArgumentException("objB");
+            }
+        }
+        public static void AssertEquals(string a, object objA, object objB)
+        {
+            if (objA == null && objB == null) return;
+            if (!objA.Equals(objB))
+            {
+                throw new ArgumentException("objB");
+            }
+        }
+        public static void AssertEquals(object objA, object objB)
+        {
+            AssertEquals(objA, objB);
+        }
+
+        protected static void Assert(string p1, bool isTrue)
+        {
+            if (!isTrue) throw new ArgumentException("isTrue");
+        }
+        protected void Assert(bool isTrue)
+        {
+            Assert(string.Empty, isTrue);
+        }
+        protected void Fail(string msg)
+        {
+            throw new Exception(msg);
+        }
+
+	    public static void AssertNull(string msg, object obj)
+	    {
+            if (null != obj)
+            {
+                throw new ArgumentNullException(msg);
+            }
+        }
+	    public static void AssertNull(object obj)
+	    {
+            if (null != obj)
+            {
+                throw new ArgumentNullException();
+            }
+        }
 	}
 }

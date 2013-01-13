@@ -30,8 +30,8 @@
 // mailto:rodrigobamboo@users.sourceforge.net
 #endregion
 
-using NUnit.Framework;
 using Bamboo.Prevalence.Tests.Model;
+using NUnit.Framework;
 
 namespace Bamboo.Prevalence.Tests
 {

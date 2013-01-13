@@ -35,6 +35,7 @@ using System.Collections;
 using System.Globalization;
 using System.IO;
 using System.Xml;
+using Bamboo.Prevalence.Implementation;
 using NUnit.Framework;
 using Bamboo.Prevalence;
 using SamplePrevalentSystem;

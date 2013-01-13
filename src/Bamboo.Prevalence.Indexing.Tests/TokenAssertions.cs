@@ -33,6 +33,7 @@
 using System;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
+using Bamboo.Prevalence.Implementation;
 using NUnit.Framework;
 using Bamboo.Prevalence.Indexing.FullText;
 using Bamboo.Prevalence.Indexing.FullText.Tokenizers;

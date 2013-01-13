@@ -31,6 +31,7 @@
 #endregion
 
 using System;
+using Bamboo.Prevalence.Implementation;
 using NUnit.Framework;
 using Bamboo.Prevalence.Indexing.FullText;
 using Bamboo.Prevalence.Indexing.FullText.Filters;

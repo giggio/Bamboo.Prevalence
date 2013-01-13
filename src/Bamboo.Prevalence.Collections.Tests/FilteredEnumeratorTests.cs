@@ -32,6 +32,7 @@
 
 using System;
 using System.Collections;
+using Bamboo.Prevalence.Implementation;
 using NUnit.Framework;
 using Bamboo.Prevalence.Collections;
 
