@@ -97,7 +97,11 @@ namespace Bamboo.Prevalence.Implementation
         }
         public static void AssertEquals(object objA, object objB)
         {
-            AssertEquals(objA, objB);
+            if (objA == null && objB == null) return;
+            if (!objA.Equals(objB))
+            {
+                throw new ArgumentException("objB");
+            }
         }
 
         protected static void Assert(string p1, bool isTrue)
